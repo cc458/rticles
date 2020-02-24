@@ -11,6 +11,7 @@ test_format <- function(name, os_skip = NULL) {
   oldwd <- setwd(dir)
   on.exit(setwd(oldwd), add = TRUE)
 
+
   # create a draft of the format
   testdoc <- paste0(name, ".Rmd")
   rmarkdown::draft(
